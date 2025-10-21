@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://threadsure.co.uk/sitemap.xml

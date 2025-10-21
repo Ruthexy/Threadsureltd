@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Services - ThreadSure Ltd® - Recovery Support Pathways</title>
+    <meta name="description" content="Comprehensive support services for substance misuse and mental health recovery. Access drugs & alcohol, mental health, criminal justice, employment, housing, and family support services.">
+    <meta property="og:title" content="Support Services - ThreadSure Ltd® - Recovery Support Pathways">
+    <meta property="og:description" content="Comprehensive support services for substance misuse and mental health recovery. Access drugs & alcohol, mental health, criminal justice, employment, housing, and family support services.">
+    <link rel="canonical" href="https://threadsure.co.uk/support.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005EB8',
+                        secondary: '#003087',
+                        accent: '#41B6E6',
+                        text: '#425563',
+                        background: '#FFFFFF',
+                        lightbg: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #425563; background-color: #FFFFFF; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #003087; }
+        .skip-link { position: absolute; top: -40px; left: 6px; background: #005EB8; color: white; padding: 8px; text-decoration: none; z-index: 100; }
+        .skip-link:focus { top: 6px; }
+        .font-size-toggle { position: absolute; top: 10px; right: 10px; background: #41B6E6; color: white; padding: 0.5rem; border-radius: 0.25rem; cursor: pointer; }
+        .large-text body { font-size: 18px; }
+        .large-text h1 { font-size: 28px; }
+        .large-text h2 { font-size: 24px; }
+        .large-text h3 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <button class="font-size-toggle" onclick="toggleFontSize()">A+</button>
+    <!-- Include header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Support Services</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Comprehensive Recovery Support for Every Step of the Journey</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Services</a>
+                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get Support</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Support Overview -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-secondary">Holistic Recovery Support</h2>
+                <p class="text-lg text-text leading-relaxed mb-8">ThreadSure provides comprehensive support services that address all aspects of recovery. Our integrated approach connects clinical treatment with practical support services, ensuring individuals have access to the resources they need for sustainable recovery. From initial assessment through long-term recovery maintenance, we support every step of the journey.</p>
+                <div class="bg-lightbg p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Our Support Philosophy</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-2">Person-Centered</h4>
+                            <p class="text-text text-sm">Support tailored to individual needs, preferences, and circumstances.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-2">Integrated Care</h4>
+                            <p class="text-text text-sm">Seamless connection between different support services and providers.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary mb-2">Recovery-Focused</h4>
+                            <p class="text-text text-sm">Emphasis on building skills, resilience, and sustainable wellbeing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Services Navigation -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Our Support Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="drugs-alcohol.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">💊</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Drugs & Alcohol</h3>
+                    <p class="text-text text-center">Specialized support for substance misuse recovery, including detoxification, rehabilitation, and relapse prevention.</p>
+                </a>
+                <a href="mental-health-support.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🧠</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Mental Health Support</h3>
+                    <p class="text-text text-center">Comprehensive mental health services including therapy, counseling, medication management, and crisis support.</p>
+                </a>
+                <a href="criminal-justice.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">⚖️</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Criminal Justice</h3>
+                    <p class="text-text text-center">Support for individuals involved with the criminal justice system, including probation, rehabilitation, and reentry services.</p>
+                </a>
+                <a href="employment-support.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">💼</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Employment Support</h3>
+                    <p class="text-text text-center">Career counseling, job training, workplace support, and employment pathway development for recovery.</p>
+                </a>
+                <a href="residential-services.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🏠</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Residential Services</h3>
+                    <p class="text-text text-center">Safe housing options including treatment centers, sober living facilities, and supported accommodation.</p>
+                </a>
+                <a href="recovery-support.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🌱</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Recovery Support</h3>
+                    <p class="text-text text-center">Peer support, recovery coaching, mutual aid groups, and long-term recovery maintenance programs.</p>
+                </a>
+                <a href="housing-services.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🏘️</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Housing Services</h3>
+                    <p class="text-text text-center">Housing assistance, homelessness prevention, tenancy support, and housing pathway planning.</p>
+                </a>
+                <a href="family-support.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">👨‍👩‍👧‍👦</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Family Support</h3>
+                    <p class="text-text text-center">Support for families and carers including counseling, education, and family therapy services.</p>
+                </a>
+                <a href="specialist-programmes.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Specialist Programmes</h3>
+                    <p class="text-text text-center">Targeted interventions for specific needs including trauma-informed care, dual diagnosis, and complex needs support.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Support Works -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">How Our Support Works</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">Assessment</h3>
+                        <p class="text-text text-sm">Comprehensive needs assessment to understand individual circumstances and support requirements.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">Personalized Plan</h3>
+                        <p class="text-text text-sm">Development of tailored support plans that address specific needs and goals.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">Integrated Support</h3>
+                        <p class="text-text text-sm">Coordination of multiple support services for holistic, integrated care.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">Ongoing Care</h3>
+                        <p class="text-text text-sm">Continuous support and monitoring to ensure sustained recovery and wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Impact -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Support Services Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-3xl font-bold text-secondary mb-2">85%</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Recovery Success</h3>
+                    <p class="text-text text-sm">Individuals achieving sustained recovery through comprehensive support</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-3xl font-bold text-secondary mb-2">60%</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Reduced Readmissions</h3>
+                    <p class="text-text text-sm">Lower hospital readmission rates through integrated support services</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-3xl font-bold text-secondary mb-2">75%</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Employment Rate</h3>
+                    <p class="text-text text-sm">Individuals in employment or education 12 months post-support</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-3xl font-bold text-secondary mb-2">90%</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Satisfaction Rate</h3>
+                    <p class="text-text text-sm">Service user satisfaction with support services received</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Support -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Access Support Services</h2>
+                <p class="text-lg text-text mb-8">Our support services are available through NHS referrals, self-referral, or through partner organizations. Contact us to discuss your support needs or to learn more about how we can help.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-lightbg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">For Individuals</h3>
+                        <p class="text-text mb-4">Self-referral available through our online portal or by contacting our support team directly.</p>
+                        <a href="contact.html" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Get Support</a>
+                    </div>
+                    <div class="bg-lightbg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">For Organizations</h3>
+                        <p class="text-text mb-4">Partner with us to provide comprehensive support services to your service users.</p>
+                        <a href="partners.html" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Include HTML functionality
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>

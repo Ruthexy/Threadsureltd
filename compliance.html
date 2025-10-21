@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance - ThreadSure Ltd® - GDPR, DTAC, WCAG 2.2</title>
+    <meta name="description" content="ThreadSure's compliance with GDPR, DTAC, WCAG 2.2, EU MDR, and data-hosting standards for secure healthcare platforms.">
+    <meta property="og:title" content="Compliance - ThreadSure Ltd® - GDPR, DTAC, WCAG 2.2">
+    <meta property="og:description" content="ThreadSure's compliance with GDPR, DTAC, WCAG 2.2, EU MDR, and data-hosting standards for secure healthcare platforms.">
+    <link rel="canonical" href="https://threadsure.co.uk/compliance.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005EB8',
+                        secondary: '#003087',
+                        accent: '#41B6E6',
+                        text: '#425563',
+                        background: '#FFFFFF',
+                        lightbg: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #425563; background-color: #FFFFFF; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #003087; }
+        .skip-link { position: absolute; top: -40px; left: 6px; background: #005EB8; color: white; padding: 8px; text-decoration: none; z-index: 100; }
+        .skip-link:focus { top: 6px; }
+        .font-size-toggle { position: absolute; top: 10px; right: 10px; background: #41B6E6; color: white; padding: 0.5rem; border-radius: 0.25rem; cursor: pointer; }
+        .large-text body { font-size: 18px; }
+        .large-text h1 { font-size: 28px; }
+        .large-text h2 { font-size: 24px; }
+        .large-text h3 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <button class="font-size-toggle" onclick="toggleFontSize()">A+</button>
+    <!-- Include header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Compliance & Security</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Built for Trust. Designed for Compliance.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#certifications" class="btn-primary text-lg px-8 py-4 shadow-2xl">View Certifications</a>
+                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Contact Us</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Compliance Badges -->
+    <section id="certifications" class="py-24 section-bg">
+        <div class="container mx-auto px-4 slide-up">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Our Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card text-center group">
+                    <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🔒</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">GDPR Ready</h3>
+                    <p class="text-text leading-relaxed">Full compliance with EU data protection regulations and privacy standards.</p>
+                </div>
+                <div class="card text-center group">
+                    <div class="w-24 h-24 bg-accent rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🏥</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">DTAC Compliant</h3>
+                    <p class="text-text leading-relaxed">NHS Digital Technology Assessment Criteria met for healthcare technology.</p>
+                </div>
+                <div class="card text-center group">
+                    <div class="w-24 h-24 bg-secondary rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">♿</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">WCAG 2.2 AA</h3>
+                    <p class="text-text leading-relaxed">Accessible design ensuring usability for all users, including those with disabilities.</p>
+                </div>
+                <div class="card text-center group">
+                    <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🇪🇺</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">EU MDR Ready</h3>
+                    <p class="text-text leading-relaxed">Prepared for European Medical Device Regulations and healthcare standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Hosting -->
+    <section class="py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Secure Data Hosting</h2>
+            <div class="max-w-5xl mx-auto">
+                <p class="text-xl text-center mb-12 text-text leading-relaxed">All data is hosted in ISO 27001 certified UK data centers, ensuring the highest levels of security and compliance with NHS and EU standards.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card group">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 group-hover:scale-110 transition-transform duration-300">🇬🇧</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-secondary">UK Sovereign Data</h3>
+                        <p class="text-text leading-relaxed">Data remains within UK borders, compliant with NHS data governance policies and national security requirements.</p>
+                    </div>
+                    <div class="card group">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 group-hover:scale-110 transition-transform duration-300">🔐</div>
+                        <h3 class="text-2xl font-semibold mb-4 text-secondary">End-to-End Encryption</h3>
+                        <p class="text-text leading-relaxed">All communications and stored data are encrypted using industry-standard protocols and military-grade security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Compliance FAQs</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="card">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200 rounded-t-lg" onclick="toggleAccordion(this)">
+                        <h3 class="text-xl font-semibold text-secondary flex items-center">
+                            <span class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4">?</span>
+                            What is DTAC compliance?
+                        </h3>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text leading-relaxed">DTAC (Digital Technology Assessment Criteria) is the NHS standard for assessing digital health technologies. ThreadSure meets all DTAC requirements for security, interoperability, usability, and clinical safety, ensuring our platform integrates seamlessly with NHS systems.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200 rounded-t-lg" onclick="toggleAccordion(this)">
+                        <h3 class="text-xl font-semibold text-secondary flex items-center">
+                            <span class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white text-sm font-bold mr-4">?</span>
+                            How does ThreadSure ensure GDPR compliance?
+                        </h3>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text leading-relaxed">We implement comprehensive data protection measures including data minimization, explicit consent management, detailed audit trails, and regular privacy impact assessments. All processing activities are documented, regularly reviewed, and aligned with GDPR principles.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200 rounded-t-lg" onclick="toggleAccordion(this)">
+                        <h3 class="text-xl font-semibold text-secondary flex items-center">
+                            <span class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4">?</span>
+                            Is the platform accessible?
+                        </h3>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text leading-relaxed">Yes, ThreadSure is WCAG 2.2 AA compliant, ensuring full accessibility for users with disabilities. This includes comprehensive keyboard navigation, screen reader support, high contrast options, and adherence to all accessibility guidelines for digital healthcare platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Include HTML functionality
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>

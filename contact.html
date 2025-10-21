@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ThreadSure Ltd® - Get in Touch</title>
+    <meta name="description" content="Contact ThreadSure for demos, partnerships, or support. WCAG-compliant form and UK HQ location.">
+    <meta property="og:title" content="Contact - ThreadSure Ltd® - Get in Touch">
+    <meta property="og:description" content="Contact ThreadSure for demos, partnerships, or support. WCAG-compliant form and UK HQ location.">
+    <link rel="canonical" href="https://threadsure.co.uk/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005EB8',
+                        secondary: '#003087',
+                        accent: '#41B6E6',
+                        text: '#425563',
+                        background: '#FFFFFF',
+                        lightbg: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #425563; background-color: #FFFFFF; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #003087; }
+        .skip-link { position: absolute; top: -40px; left: 6px; background: #005EB8; color: white; padding: 8px; text-decoration: none; z-index: 100; }
+        .skip-link:focus { top: 6px; }
+        .font-size-toggle { position: absolute; top: 10px; right: 10px; background: #41B6E6; color: white; padding: 0.5rem; border-radius: 0.25rem; cursor: pointer; }
+        .large-text body { font-size: 18px; }
+        .large-text h1 { font-size: 28px; }
+        .large-text h2 { font-size: 24px; }
+        .large-text h3 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <button class="font-size-toggle" onclick="toggleFontSize()">A+</button>
+    <!-- Include header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Contact Us</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Let's Connect. Let's Recover.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact-form" class="btn-primary text-lg px-8 py-4 shadow-2xl">Get in Touch</a>
+                <a href="about.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">About Us</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form" class="py-24 section-bg">
+        <div class="container mx-auto px-4 slide-up">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Send Us a Message</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="max-w-2xl mx-auto card">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold mb-2 text-secondary">Full Name *</label>
+                        <input type="text" id="name" name="name" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" aria-label="Full Name" placeholder="Your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2 text-secondary">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" aria-label="Email Address" placeholder="your.email@example.com">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="organization" class="block text-sm font-semibold mb-2 text-secondary">Organization</label>
+                        <input type="text" id="organization" name="organization" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" aria-label="Organization" placeholder="Your organization">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold mb-2 text-secondary">Subject *</label>
+                        <select id="subject" name="subject" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" aria-label="Subject">
+                            <option value="">Select a subject</option>
+                            <option value="demo">Request Demo</option>
+                            <option value="partnership">Partnership Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="press">Press Inquiry</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label for="message" class="block text-sm font-semibold mb-2 text-secondary">Message *</label>
+                    <textarea id="message" name="message" rows="6" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 resize-vertical" aria-label="Message" placeholder="Tell us how we can help you..."></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary text-lg py-4 shadow-lg hover:shadow-xl">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Departmental Contacts -->
+    <section class="py-24 bg-gradient-to-br from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Departmental Contacts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card group">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">💼</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">Sales & Demos</h3>
+                    <p class="text-text leading-relaxed mb-4">For product demos and sales inquiries:</p>
+                    <a href="mailto:sales@threadsure.co.uk" class="text-primary hover:text-secondary font-semibold transition-colors duration-200 text-lg">sales@threadsure.co.uk</a>
+                </div>
+                <div class="card group">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">🤝</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">Partnerships</h3>
+                    <p class="text-text leading-relaxed mb-4">For NHS, MoJ, or EU partnerships:</p>
+                    <a href="mailto:partnerships@threadsure.co.uk" class="text-primary hover:text-secondary font-semibold transition-colors duration-200 text-lg">partnerships@threadsure.co.uk</a>
+                </div>
+                <div class="card group">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">🛠️</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">Technical Support</h3>
+                    <p class="text-text leading-relaxed mb-4">For technical support and training:</p>
+                    <a href="mailto:support@threadsure.co.uk" class="text-primary hover:text-secondary font-semibold transition-colors duration-200 text-lg">support@threadsure.co.uk</a>
+                </div>
+                <div class="card group">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">📢</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary">Press & Media</h3>
+                    <p class="text-text leading-relaxed mb-4">For media inquiries and press releases:</p>
+                    <a href="mailto:press@threadsure.co.uk" class="text-primary hover:text-secondary font-semibold transition-colors duration-200 text-lg">press@threadsure.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Address -->
+    <section class="py-24 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Visit Our Headquarters</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-6 text-secondary">ThreadSure Ltd®</h3>
+                    <div class="space-y-3 text-text leading-relaxed">
+                        <p><strong>Address:</strong><br>123 Recovery Way<br>Healthcare District<br>London, UK<br>SW1A 1AA</p>
+                        <p><strong>Phone:</strong><br>+44 20 1234 5678</p>
+                        <p><strong>Business Hours:</strong><br>Monday - Friday: 9:00 AM - 6:00 PM GMT<br>Emergency Support: 24/7</p>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4 text-secondary">Quick Links</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="about.html" class="btn-accent text-sm px-4 py-2">About Us</a>
+                            <a href="careers.html" class="btn-primary text-sm px-4 py-2">Careers</a>
+                            <a href="press.html" class="btn-accent text-sm px-4 py-2">Press Kit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.123456789012!2d-0.127647!3d51.507351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2b2b2b2b2b2b%3A0x1234567890abcdef!2sThreadSure%20Ltd!5e0!3m2!1sen!2suk!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ThreadSure HQ Location" class="w-full h-full"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Include HTML functionality
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>

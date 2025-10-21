@@ -1,0 +1,78 @@
+    </main>
+    <footer class="bg-secondary text-white py-12" role="contentinfo">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ThreadSure Ltd®</h3>
+                    <p class="text-lg mb-2">Connecting Care. Empowering Recovery.</p>
+                    <p class="text-sm">Secure, trauma-informed platform for substance-misuse & mental-health recovery pathways.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-accent transition-colors duration-200">About Us</a></li>
+                        <li><a href="compliance.html" class="hover:text-accent transition-colors duration-200">Compliance</a></li>
+                        <li><a href="partners.html" class="hover:text-accent transition-colors duration-200">Partners</a></li>
+                        <li><a href="press.html" class="hover:text-accent transition-colors duration-200">Press</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="hover:text-accent transition-colors duration-200">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-accent transition-colors duration-200">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white p-4 rounded-lg">
+                        <input type="email" name="email" placeholder="Enter your email" required class="w-full p-2 mb-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Email for newsletter">
+                        <button type="submit" class="w-full bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Subscribe</button>
+                    </form>
+                    <p class="text-sm mt-2">Stay updated with our latest news and updates.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-6 text-center">
+                <p class="text-sm">&copy; 2023 ThreadSure Ltd®. All rights reserved.</p>
+                <p class="text-sm mt-2">WCAG 2.2 AA Compliant | NHS DTAC Compliant | GDPR Ready</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Accordion functionality
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

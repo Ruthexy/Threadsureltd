@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - ThreadSure Ltd® - Support Recovery Services</title>
+    <meta name="description" content="Make a donation to ThreadSure. Your support helps provide secure, trauma-informed recovery services for substance misuse and mental health. Donate online today.">
+    <meta property="og:title" content="Donate - ThreadSure Ltd® - Support Recovery Services">
+    <meta property="og:description" content="Make a donation to ThreadSure. Your support helps provide secure, trauma-informed recovery services for substance misuse and mental health. Donate online today.">
+    <link rel="canonical" href="https://threadsure.co.uk/donate.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005EB8',
+                        secondary: '#003087',
+                        accent: '#41B6E6',
+                        text: '#425563',
+                        background: '#FFFFFF',
+                        lightbg: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #425563; background-color: #FFFFFF; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #003087; }
+        .skip-link { position: absolute; top: -40px; left: 6px; background: #005EB8; color: white; padding: 8px; text-decoration: none; z-index: 100; }
+        .skip-link:focus { top: 6px; }
+        .font-size-toggle { position: absolute; top: 10px; right: 10px; background: #41B6E6; color: white; padding: 0.5rem; border-radius: 0.25rem; cursor: pointer; }
+        .large-text body { font-size: 18px; }
+        .large-text h1 { font-size: 28px; }
+        .large-text h2 { font-size: 24px; }
+        .large-text h3 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <button class="font-size-toggle" onclick="toggleFontSize()">A+</button>
+    <!-- Include header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-accent text-white py-20" role="banner">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-secondary">Make a Donation</h1>
+            <p class="text-xl mb-8">Your Support Changes Lives</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-lightbg py-4" aria-label="Breadcrumb">
+        <div class="container mx-auto px-4">
+            <ol class="flex items-center space-x-2 text-sm">
+                <li><a href="index.html" class="text-primary hover:text-secondary">Home</a></li>
+                <li class="text-text">/</li>
+                <li><a href="get-involved.html" class="text-primary hover:text-secondary">Get Involved</a></li>
+                <li class="text-text">/</li>
+                <li class="text-secondary font-semibold">Donate</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Donation Impact -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-secondary">Your Donation Makes a Difference</h2>
+                <p class="text-lg text-text leading-relaxed mb-8">Every donation, no matter the size, directly supports our mission to provide secure, trauma-informed recovery services. Your generosity helps us reach more individuals and families affected by substance misuse and mental health challenges, offering hope and healing when it's needed most.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-lightbg p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🏠</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">£25</h3>
+                        <p class="text-text text-sm">Provides housing support for one person for one week</p>
+                    </div>
+                    <div class="bg-lightbg p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">💊</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">£50</h3>
+                        <p class="text-text text-sm">Funds medication-assisted treatment for one person for one month</p>
+                    </div>
+                    <div class="bg-lightbg p-6 rounded-lg text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">👨‍👩‍👧‍👦</div>
+                        <h3 class="text-lg font-semibold mb-2 text-secondary">£100</h3>
+                        <p class="text-text text-sm">Supports family counseling sessions for one family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Ways to Donate</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6 text-secondary">One-Time Donation</h3>
+                    <p class="text-text mb-6">Make a single donation to support our ongoing work. Your contribution will be used where it's needed most.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <button class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£25</button>
+                        <button class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£50</button>
+                        <button class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£100</button>
+                        <button class="bg-accent hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">Other</button>
+                    </div>
+                    <button class="w-full bg-secondary hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">Donate Now</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-6 text-secondary">Monthly Giving</h3>
+                    <p class="text-text mb-6">Become a regular supporter with monthly donations. Consistent funding allows us to plan and deliver services more effectively.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <button class="bg-accent hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£10/month</button>
+                        <button class="bg-accent hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£25/month</button>
+                        <button class="bg-accent hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">£50/month</button>
+                        <button class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">Other</button>
+                    </div>
+                    <button class="w-full bg-accent hover:bg-primary text-white font-semibold py-3 px-4 rounded transition-colors duration-200">Set Up Monthly</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Aid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-secondary">Increase Your Impact with Gift Aid</h2>
+                <div class="bg-lightbg p-8 rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 text-secondary">What is Gift Aid?</h3>
+                            <p class="text-text text-sm mb-4">Gift Aid is a UK tax scheme that allows charities to reclaim the basic rate tax on donations. This means your donation can be worth 25% more to us at no extra cost to you.</p>
+                            <ul class="text-text text-sm space-y-1">
+                                <li>• We can claim back £0.25 for every £1 you donate</li>
+                                <li>• Only available to UK taxpayers</li>
+                                <li>• No extra cost to you</li>
+                                <li>• Increases the value of your donation by 25%</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4 text-secondary">Gift Aid Declaration</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" id="gift-aid">
+                                        <span class="text-text text-sm">I am a UK taxpayer and would like ThreadSure to treat this donation and any future donations as Gift Aid donations.</span>
+                                    </label>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <input type="text" placeholder="First Name" class="p-2 border rounded" required>
+                                    <input type="text" placeholder="Last Name" class="p-2 border rounded" required>
+                                </div>
+                                <input type="text" placeholder="Address" class="w-full p-2 border rounded" required>
+                                <input type="text" placeholder="Postcode" class="w-full p-2 border rounded" required>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Benefits -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Donor Benefits</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4 text-secondary">Tax Benefits</h3>
+                    <p class="text-text text-sm mb-4">Donations may qualify for tax relief depending on your circumstances.</p>
+                    <ul class="text-text text-sm space-y-1">
+                        <li>• Gift Aid increases donation value by 25%</li>
+                        <li>• Higher rate taxpayers can claim additional relief</li>
+                        <li>• Tax-efficient giving options available</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4 text-secondary">Recognition</h3>
+                    <p class="text-text text-sm mb-4">We value and recognize all our supporters.</p>
+                    <ul class="text-text text-sm space-y-1">
+                        <li>• Donor acknowledgment letters</li>
+                        <li>• Annual impact reports</li>
+                        <li>• Invitation to donor events</li>
+                        <li>• Named recognition opportunities</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4 text-secondary">Impact Tracking</h3>
+                    <p class="text-text text-sm mb-4">See how your donation makes a difference.</p>
+                    <ul class="text-text text-sm space-y-1">
+                        <li>• Regular impact updates</li>
+                        <li>• Success stories from our services</li>
+                        <li>• Annual financial reports</li>
+                        <li>• Transparent fund allocation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Giving -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Corporate Giving</h2>
+                <p class="text-lg text-text mb-8">Companies can support our mission through various corporate giving programs. We work with businesses to create meaningful partnerships that benefit both your organization and the communities we serve.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-lightbg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">Employee Giving</h3>
+                        <p class="text-text text-sm mb-4">Payroll giving, matched funding, and employee volunteering programs.</p>
+                        <a href="mailto:corporate@threadsure.co.uk" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
+                    </div>
+                    <div class="bg-lightbg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-4 text-secondary">CSR Partnerships</h3>
+                        <p class="text-text text-sm mb-4">Long-term partnerships aligned with your corporate social responsibility goals.</p>
+                        <a href="partners.html" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Give -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Other Ways to Support</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="fundraise.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-center">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">🎯</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Fundraise</h3>
+                    <p class="text-text text-sm">Organize your own fundraising event</p>
+                </a>
+                <a href="challenge.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-center">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">🏃‍♀️</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Challenge</h3>
+                    <p class="text-text text-sm">Take part in sponsored challenges</p>
+                </a>
+                <a href="create-your-legacy.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-center">
+                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">🌟</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Legacy Giving</h3>
+                    <p class="text-text text-sm">Leave a lasting legacy through planned giving</p>
+                </a>
+                <a href="give-in-memory.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-center">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">💙</div>
+                    <h3 class="text-lg font-semibold mb-2 text-secondary">Give in Memory</h3>
+                    <p class="text-text text-sm">Honor loved ones with memorial donations</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact for Donations -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Questions About Donating?</h2>
+            <p class="text-xl mb-8">Our donations team is here to help you find the best way to support our work.</p>
+            <a href="mailto:donations@threadsure.co.uk" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg">Contact Donations Team</a>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Include HTML functionality
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>

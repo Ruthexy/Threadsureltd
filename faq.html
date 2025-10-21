@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ThreadSure Ltd® - Frequently Asked Questions</title>
+    <meta name="description" content="Frequently asked questions about ThreadSure platform. Learn about our secure, trauma-informed recovery pathways for substance misuse and mental health.">
+    <meta property="og:title" content="FAQ - ThreadSure Ltd® - Frequently Asked Questions">
+    <meta property="og:description" content="Frequently asked questions about ThreadSure platform. Learn about our secure, trauma-informed recovery pathways for substance misuse and mental health.">
+    <link rel="canonical" href="https://threadsure.co.uk/faq.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#005EB8',
+                        secondary: '#003087',
+                        accent: '#41B6E6',
+                        text: '#425563',
+                        background: '#FFFFFF',
+                        lightbg: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 1.4; color: #425563; background-color: #FFFFFF; }
+        h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #003087; }
+        .skip-link { position: absolute; top: -40px; left: 6px; background: #005EB8; color: white; padding: 8px; text-decoration: none; z-index: 100; }
+        .skip-link:focus { top: 6px; }
+        .font-size-toggle { position: absolute; top: 10px; right: 10px; background: #41B6E6; color: white; padding: 0.5rem; border-radius: 0.25rem; cursor: pointer; }
+        .large-text body { font-size: 18px; }
+        .large-text h1 { font-size: 28px; }
+        .large-text h2 { font-size: 24px; }
+        .large-text h3 { font-size: 22px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <button class="font-size-toggle" onclick="toggleFontSize()">A+</button>
+    <!-- Include header -->
+    <div w3-include-html="header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Frequently Asked Questions</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Your Questions Answered</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#general" class="btn-primary text-lg px-8 py-4 shadow-2xl">Browse FAQs</a>
+                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Ask a Question</a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-16 bg-lightbg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="showCategory('general')" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-200">General</button>
+                <button onclick="showCategory('platform')" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-200">Platform</button>
+                <button onclick="showCategory('privacy')" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-200">Privacy & Security</button>
+                <button onclick="showCategory('support')" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-200">Support</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+
+            <!-- General FAQs -->
+            <div id="general" class="faq-category">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">General Questions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">What is ThreadSure?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">ThreadSure is a secure, trauma-informed digital platform designed to support substance misuse and mental health recovery pathways. We connect healthcare providers, patients, and support networks to ensure coordinated, effective care.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Who can use ThreadSure?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">ThreadSure is designed for NHS trusts, justice services, community rehabilitation teams, and healthcare providers across the UK and EU. Patients and carers can also access certain features through their care providers.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Is ThreadSure NHS approved?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Yes, ThreadSure meets NHS Digital Technology Assessment Criteria (DTAC) and is officially partnered with NHS trusts. Our platform is designed to integrate seamlessly with existing NHS systems and workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform FAQs -->
+            <div id="platform" class="faq-category hidden">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Platform Questions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">How does the platform work?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">ThreadSure provides a secure digital environment where multidisciplinary teams can collaborate on personalized recovery pathways. Features include assessment tools, pathway planning, progress monitoring, and secure communication channels.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Is the platform mobile-friendly?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Yes, ThreadSure is fully responsive and works seamlessly across desktop, tablet, and mobile devices. Our mobile-optimized interface ensures healthcare professionals can access critical information anywhere, anytime.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Can ThreadSure integrate with existing systems?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Absolutely. ThreadSure is designed with interoperability in mind and can integrate with most major healthcare systems, EHR platforms, and existing NHS infrastructure through secure APIs and standard protocols.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">What languages does ThreadSure support?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Currently, ThreadSure supports English with planned expansion to German and French. Our platform is built to be easily localized for additional European languages as needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Security FAQs -->
+            <div id="privacy" class="faq-category hidden">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Privacy & Security</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">How secure is patient data?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">ThreadSure employs bank-level encryption, secure data centers in the UK, and complies with GDPR and NHS data protection standards. All data transmission is encrypted, and access is strictly controlled with audit trails.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Who can access patient information?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Access to patient data is strictly controlled and limited to authorized healthcare professionals involved in that patient's care. Patients can also access their own information through secure portals, and all access is logged and auditable.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Is data stored in the UK?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Yes, all ThreadSure data is stored in ISO 27001 certified data centers located within the UK, ensuring compliance with NHS data sovereignty requirements and GDPR regulations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support FAQs -->
+            <div id="support" class="faq-category hidden">
+                <h2 class="text-3xl font-bold mb-8 text-secondary">Support & Training</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">What training is provided?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">We provide comprehensive training including online tutorials, in-person workshops, and ongoing support. Training covers platform usage, data privacy, and best practices for trauma-informed care.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">Is 24/7 support available?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Yes, ThreadSure provides 24/7 technical support for critical issues. Our dedicated support team includes clinical informatics specialists who understand healthcare workflows and can assist with both technical and clinical questions.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-lightbg transition-colors duration-200" onclick="toggleAccordion(this)">
+                            <h3 class="text-lg font-semibold text-secondary">How do I get started?</h3>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-text">Contact our partnerships team to discuss your organization's needs. We'll arrange a demo, assess integration requirements, and provide a customized implementation plan with training and ongoing support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Still Have Questions?</h2>
+            <p class="text-xl mb-8">Our team is here to help. Contact us for personalized assistance.</p>
+            <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        function toggleFontSize() {
+            document.body.classList.toggle('large-text');
+        }
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = content.style.display === 'block';
+            content.style.display = isOpen ? 'none' : 'block';
+            button.setAttribute('aria-expanded', !isOpen);
+        }
+        function showCategory(category) {
+            // Hide all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.add('hidden');
+            });
+            // Show selected category
+            document.getElementById(category).classList.remove('hidden');
+            // Update button states
+            document.querySelectorAll('button[onclick^="showCategory"]').forEach(btn => {
+                btn.classList.remove('bg-secondary');
+                btn.classList.add('bg-primary');
+            });
+            event.target.classList.remove('bg-primary');
+            event.target.classList.add('bg-secondary');
+        }
+        // Lazy load images
+        const images = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        images.forEach(img => imageObserver.observe(img));
+        // Include HTML functionality
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>
