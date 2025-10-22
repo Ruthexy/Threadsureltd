@@ -50,18 +50,32 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Careers at ThreadSure</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Join Our Mission to Transform Recovery Services</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#opportunities" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Opportunities</a>
-                <a href="volunteering.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Volunteer</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+    <section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  role="banner"
+  style="background-image: url('/assets/CareersHero.png');"
+>
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 mix-blend-multiply"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+      Careers at ThreadSure
+    </h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+      Join Our Mission to Transform Recovery Services
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#opportunities" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Opportunities</a>
+      <a href="volunteering.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Volunteer</a>
+    </div>
+  </div>
+
+  <!-- Bottom gradient fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Career Overview -->
     <section class="py-16">
@@ -91,28 +105,38 @@
     </section>
 
     <!-- Career Pathways -->
-    <section class="py-16 bg-lightbg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Career Opportunities</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="recruitment.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">💼</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Recruitment</h3>
-                    <p class="text-text text-center">Explore paid career opportunities in healthcare, social work, administration, and support services.</p>
-                </a>
-                <a href="volunteering.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
-                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🤝</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Volunteering</h3>
-                    <p class="text-text text-center">Contribute your time and skills through volunteering opportunities in recovery support and community services.</p>
-                </a>
-                <a href="leadership.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block">
-                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">👔</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Leadership</h3>
-                    <p class="text-text text-center">Senior leadership roles and board positions for experienced professionals in health and social care.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+  style="background-image: url('/assets/CareerOpportunities.png');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/80 mix-blend-multiply"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white drop-shadow-md">
+      Career Opportunities
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="recruitment.html" class="bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-gray-900">
+        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">💼</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Recruitment</h3>
+        <p class="text-text text-center">Explore paid career opportunities in healthcare, social work, administration, and support services.</p>
+      </a>
+      <a href="volunteering.html" class="bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-gray-900">
+        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🤝</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Volunteering</h3>
+        <p class="text-text text-center">Contribute your time and skills through volunteering opportunities in recovery support and community services.</p>
+      </a>
+      <a href="leadership.html" class="bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 block text-gray-900">
+        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">👔</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary text-center">Leadership</h3>
+        <p class="text-text text-center">Senior leadership roles and board positions for experienced professionals in health and social care.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Our Culture -->
     <section class="py-16">
@@ -146,43 +170,51 @@
     </section>
 
     <!-- Benefits -->
-    <section class="py-16 bg-lightbg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">What We Offer</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Professional Development</h3>
-                    <p class="text-text text-sm mb-4">Continuous learning opportunities, training programs, and career advancement support.</p>
-                    <ul class="text-text text-sm space-y-1">
-                        <li>• Comprehensive induction</li>
-                        <li>• Ongoing professional development</li>
-                        <li>• Leadership development programs</li>
-                        <li>• External training opportunities</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Work-Life Balance</h3>
-                    <p class="text-text text-sm mb-4">Supportive environment that values work-life balance and employee wellbeing.</p>
-                    <ul class="text-text text-sm space-y-1">
-                        <li>• Flexible working arrangements</li>
-                        <li>• Generous holiday entitlement</li>
-                        <li>• Employee assistance program</li>
-                        <li>• Health and wellbeing support</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Rewards & Recognition</h3>
-                    <p class="text-text text-sm mb-4">Competitive compensation and recognition for outstanding contributions.</p>
-                    <ul class="text-text text-sm space-y-1">
-                        <li>• Competitive salary and benefits</li>
-                        <li>• Performance-related rewards</li>
-                        <li>• Employee recognition programs</li>
-                        <li>• Long service awards</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat overflow-hidden" 
+  style="background-image: url('/assets/WhatWeOffer.png');"
+>
+  <!-- Overlay for contrast -->
+  <div class="absolute inset-0 bg-gradient-to-r from-white/90 to-white/95"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-secondary">What We Offer</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Professional Development</h3>
+        <p class="text-text text-sm mb-4">Continuous learning opportunities, training programs, and career advancement support.</p>
+        <ul class="text-text text-sm space-y-1">
+          <li>• Comprehensive induction</li>
+          <li>• Ongoing professional development</li>
+          <li>• Leadership development programs</li>
+          <li>• External training opportunities</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Work-Life Balance</h3>
+        <p class="text-text text-sm mb-4">Supportive environment that values work-life balance and employee wellbeing.</p>
+        <ul class="text-text text-sm space-y-1">
+          <li>• Flexible working arrangements</li>
+          <li>• Generous holiday entitlement</li>
+          <li>• Employee assistance program</li>
+          <li>• Health and wellbeing support</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Rewards & Recognition</h3>
+        <p class="text-text text-sm mb-4">Competitive compensation and recognition for outstanding contributions.</p>
+        <ul class="text-text text-sm space-y-1">
+          <li>• Competitive salary and benefits</li>
+          <li>• Performance-related rewards</li>
+          <li>• Employee recognition programs</li>
+          <li>• Long service awards</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Current Opportunities -->
     <section class="py-16">
@@ -231,16 +263,30 @@
     </section>
 
     <!-- Join Us CTA -->
-    <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Ready to Make a Difference?</h2>
-            <p class="text-xl mb-8">Join our team and contribute to transforming recovery services across the UK.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="recruitment.html" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">Explore Careers</a>
-                <a href="volunteering.html" class="bg-secondary hover:bg-accent text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">Volunteer With Us</a>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+  style="background-image: url('/assets/CTA.png');"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 mix-blend-multiply"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h2 class="text-3xl font-bold mb-8 drop-shadow-md">Ready to Make a Difference?</h2>
+    <p class="text-xl mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+      Join our team and contribute to transforming recovery services across the UK.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="recruitment.html" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg">
+        Explore Careers
+      </a>
+      <a href="volunteering.html" class="bg-secondary hover:bg-accent text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg">
+        Volunteer With Us
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Include footer -->
     <div w3-include-html="footer.html"></div>

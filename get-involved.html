@@ -50,18 +50,30 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Get Involved</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Your Support Makes Recovery Possible</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#ways" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Ways to Help</a>
-                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Contact Us</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+    <section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  role="banner"
+  style="background-image: url('/assets/GetInvolvedHero.png');"
+>
+  <!-- Gradient overlay for contrast -->
+  <div class="absolute inset-0"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Get Involved</h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+      Your Support Makes Recovery Possible
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#ways" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Ways to Help</a>
+      <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Bottom fade for smooth transition -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Ways to Get Involved -->
     <section id="ways" class="py-24 section-bg">
@@ -111,33 +123,52 @@
     </section>
 
     <!-- Impact of Involvement -->
-    <section class="py-24 bg-gradient-to-br from-gray-50 to-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Your Impact</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card text-center group">
-                    <div class="text-4xl font-bold text-primary mb-4 group-hover:scale-110 transition-transform duration-300">£2.5M</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Annual Support</h3>
-                    <p class="text-text leading-relaxed">Raised through donations, fundraising, and grants to support our services</p>
-                </div>
-                <div class="card text-center group">
-                    <div class="text-4xl font-bold text-accent mb-4 group-hover:scale-110 transition-transform duration-300">15,000+</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Lives Supported</h3>
-                    <p class="text-text leading-relaxed">Individuals who have benefited from services funded by our supporters</p>
-                </div>
-                <div class="card text-center group">
-                    <div class="text-4xl font-bold text-secondary mb-4 group-hover:scale-110 transition-transform duration-300">500+</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Volunteers</h3>
-                    <p class="text-text leading-relaxed">Dedicated volunteers contributing their time and skills to our mission</p>
-                </div>
-                <div class="card text-center group">
-                    <div class="text-4xl font-bold text-primary mb-4 group-hover:scale-110 transition-transform duration-300">85%</div>
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Recovery Success</h3>
-                    <p class="text-text leading-relaxed">Individuals achieving sustained recovery through our supported services</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section 
+  class="py-24 bg-gradient-to-br from-gray-50/90 to-white/90 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('/assets/SupportyourImpact.png');"
+>
+  <!-- Soft overlay for contrast and readability -->
+  <div class="absolute inset-0  backdrop-blur-sm"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-4xl font-bold text-center mb-16 text-white">Your Impact</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="card text-center group">
+        <div class="text-4xl font-bold text-primary mb-4 group-hover:scale-110 transition-transform duration-300">£2.5M</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary">Annual Support</h3>
+        <p class="text-text leading-relaxed">
+          Raised through donations, fundraising, and grants to support our services
+        </p>
+      </div>
+
+      <div class="card text-center group">
+        <div class="text-4xl font-bold text-accent mb-4 group-hover:scale-110 transition-transform duration-300">15,000+</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary">Lives Supported</h3>
+        <p class="text-text leading-relaxed">
+          Individuals who have benefited from services funded by our supporters
+        </p>
+      </div>
+
+      <div class="card text-center group">
+        <div class="text-4xl font-bold text-secondary mb-4 group-hover:scale-110 transition-transform duration-300">500+</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary">Volunteers</h3>
+        <p class="text-text leading-relaxed">
+          Dedicated volunteers contributing their time and skills to our mission
+        </p>
+      </div>
+
+      <div class="card text-center group">
+        <div class="text-4xl font-bold text-primary mb-4 group-hover:scale-110 transition-transform duration-300">85%</div>
+        <h3 class="text-xl font-semibold mb-4 text-secondary">Recovery Success</h3>
+        <p class="text-text leading-relaxed">
+          Individuals achieving sustained recovery through our supported services
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Supporter Stories -->
     <section class="py-24 bg-gradient-to-r from-primary/5 to-accent/5">
@@ -159,34 +190,60 @@
     </section>
 
     <!-- Corporate Partnerships -->
-    <section class="py-24 section-bg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Corporate Support</h2>
-            <div class="max-w-6xl mx-auto">
-                <p class="text-xl text-text text-center mb-12 leading-relaxed">We welcome corporate partnerships and employee engagement programs. Companies can support our mission through:</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="card text-center group">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🏢</div>
-                        <h3 class="text-xl font-semibold mb-4 text-secondary">Workplace Giving</h3>
-                        <p class="text-text leading-relaxed">Employee payroll giving and matched funding programs.</p>
-                    </div>
-                    <div class="card text-center group">
-                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🏃‍♂️</div>
-                        <h3 class="text-xl font-semibold mb-4 text-secondary">Team Challenges</h3>
-                        <p class="text-text leading-relaxed">Organized fundraising events for your company's teams.</p>
-                    </div>
-                    <div class="card text-center group">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">🤝</div>
-                        <h3 class="text-xl font-semibold mb-4 text-secondary">CSR Partnerships</h3>
-                        <p class="text-text leading-relaxed">Long-term partnerships aligned with your corporate social responsibility goals.</p>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <a href="partners.html" class="btn-primary text-lg px-8 py-4">Learn About Partnerships</a>
-                </div>
-            </div>
+<section 
+  class="py-24 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('/assets/Corporate\ Support.png');"
+>
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-white/70 to-accent/20 backdrop-blur-sm"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-4xl font-bold text-center mb-16 text-secondary">Corporate Support</h2>
+
+    <div class="max-w-6xl mx-auto">
+      <p class="text-xl text-text text-center mb-12 leading-relaxed">
+        We welcome corporate partnerships and employee engagement programs. Companies can support our mission through:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card text-center group">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            🏢
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Workplace Giving</h3>
+          <p class="text-text leading-relaxed">
+            Employee payroll giving and matched funding programs.
+          </p>
         </div>
-    </section>
+
+        <div class="card text-center group">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            🏃‍♂️
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Team Challenges</h3>
+          <p class="text-text leading-relaxed">
+            Organized fundraising events for your company's teams.
+          </p>
+        </div>
+
+        <div class="card text-center group">
+          <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            🤝
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-secondary">CSR Partnerships</h3>
+          <p class="text-text leading-relaxed">
+            Long-term partnerships aligned with your corporate social responsibility goals.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="partners.html" class="btn-primary text-lg px-8 py-4">Learn About Partnerships</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Quick Actions -->
     <section class="py-24 bg-gradient-to-br from-white to-gray-50">
@@ -220,17 +277,25 @@
     </section>
 
     <!-- Contact for Support -->
-    <section class="py-24 bg-gradient-to-r from-primary to-secondary text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/20"></div>
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-8">Questions About Getting Involved?</h2>
-            <p class="text-xl mb-12 max-w-3xl mx-auto leading-relaxed">Our team is here to help you find the best way to support our mission and make the greatest impact.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="btn-accent text-lg px-8 py-4">Contact Us</a>
-                <a href="faq.html" class="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg backdrop-blur-sm">View FAQ</a>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-24 bg-gradient-to-r from-primary to-secondary text-white relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('/assets/CTA.png');"
+>
+  <!-- Semi-transparent overlay for contrast -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h2 class="text-4xl font-bold mb-8 text-white">Questions About Getting Involved?</h2>
+    <p class="text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
+      Our team is here to help you find the best way to support our mission and make the greatest impact.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="contact.html" class="btn-accent text-lg px-8 py-4">Contact Us</a>
+      <a href="faq.html" class="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg backdrop-blur-sm">View FAQ</a>
+    </div>
+  </div>
+</section>
 
     <!-- Include footer -->
     <div w3-include-html="footer.html"></div>

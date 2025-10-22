@@ -50,18 +50,29 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Success Stories</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Real Recovery Journeys. Real Hope.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#featured" class="btn-primary text-lg px-8 py-4 shadow-2xl">Read Stories</a>
-                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Share Your Story</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+    <section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  role="banner"
+  style="background-image: url('/assets/SuccessStoriesHero.png');"
+>
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 mix-blend-multiply"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Success Stories</h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Real Recovery Journeys. Real Hope.</p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#featured" class="btn-primary text-lg px-8 py-4 shadow-2xl">Read Stories</a>
+      <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Share Your Story</a>
+    </div>
+  </div>
+
+  <!-- Fade bottom gradient for transition -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Impact Stats -->
     <section class="py-16 bg-lightbg">
@@ -171,13 +182,22 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Your Story Could Be Next</h2>
-            <p class="text-xl mb-8">Join thousands who have found hope and healing through ThreadSure's platform.</p>
-            <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg">Start Your Journey</a>
-        </div>
-    </section>
+    <section 
+  class="py-16 text-white relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('/assets/CTA.png');"
+>
+  <!-- Overlay for better text contrast -->
+  <div class="absolute inset-0 mix-blend-multiply"></div>
+
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h2 class="text-3xl font-bold mb-8 text-white">Your Story Could Be Next</h2>
+    <p class="text-xl mb-8">Join thousands who have found hope and healing through ThreadSure's platform.</p>
+    <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
+      Start Your Journey
+    </a>
+  </div>
+</section>
+
 
     <!-- Include footer -->
     <div w3-include-html="footer.html"></div>

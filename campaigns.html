@@ -50,18 +50,31 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Our Campaigns</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Raising Awareness. Driving Change.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#active" class="btn-primary text-lg px-8 py-4 shadow-2xl">Active Campaigns</a>
-                <a href="get-involved.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get Involved</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+    <section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  role="banner"
+  style="background-image: url('/assets/Campaign.png');"
+>
+  <!-- Gradient overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 mix-blend-multiply"></div>
+
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+      Our Campaigns
+    </h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+      Raising Awareness. Driving Change.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#active" class="btn-primary text-lg px-8 py-4 shadow-2xl">Active Campaigns</a>
+      <a href="get-involved.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get Involved</a>
+    </div>
+  </div>
+
+  <!-- Bottom gradient fade to white -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Campaign Overview -->
     <section class="py-16">
@@ -91,78 +104,90 @@
     </section>
 
     <!-- Active Campaigns -->
-    <section class="py-16 bg-lightbg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Active Campaigns</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">💙</div>
-                        <h3 class="text-xl font-semibold text-secondary">Recovery Is Possible</h3>
-                    </div>
-                    <p class="text-text mb-4">Our flagship campaign celebrating recovery stories and demonstrating that recovery is possible for everyone. Through personal stories, data-driven insights, and community events, we showcase the reality of recovery and inspire hope.</p>
-                    <div class="mb-4">
-                        <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
-                        <ul class="text-text text-sm space-y-1">
-                            <li>• Recovery story sharing events</li>
-                            <li>• Social media awareness campaigns</li>
-                            <li>• Community workshops and talks</li>
-                            <li>• Recovery success metrics publication</li>
-                        </ul>
-                    </div>
-                    <a href="#recovery-possible" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
-                </div>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat overflow-hidden" 
+  style="background-image: url('/assets/ActiveCampaigns.png');"
+>
+  <!-- Dark overlay for readability -->
+  <div class="absolute inset-0 bg-black/50"></div>
 
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🧠</div>
-                    <h3 class="text-xl font-semibold text-secondary inline">Mental Health Matters</h3>
-                    <p class="text-text mb-4">Addressing mental health stigma and promoting early intervention. This campaign focuses on workplace mental health, youth mental wellbeing, and integrated mental health support.</p>
-                    <div class="mb-4">
-                        <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
-                        <ul class="text-text text-sm space-y-1">
-                            <li>• Workplace mental health training</li>
-                            <li>• Youth mental health awareness</li>
-                            <li>• Anti-stigma campaigns</li>
-                            <li>• Mental health first aid courses</li>
-                        </ul>
-                    </div>
-                    <a href="#mental-health-matters" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
-                </div>
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white drop-shadow-lg">Active Campaigns</h2>
 
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🏠</div>
-                    <h3 class="text-xl font-semibold text-secondary inline">Housing First</h3>
-                    <p class="text-text mb-4">Advocating for Housing First approaches and challenging homelessness myths. We work to ensure that stable housing is recognized as a fundamental right and essential foundation for recovery.</p>
-                    <div class="mb-4">
-                        <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
-                        <ul class="text-text text-sm space-y-1">
-                            <li>• Policy advocacy and lobbying</li>
-                            <li>• Housing rights education</li>
-                            <li>• Landlord awareness campaigns</li>
-                            <li>• Housing stability success stories</li>
-                        </ul>
-                    </div>
-                    <a href="#housing-first" class="bg-secondary hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🤝</div>
-                    <h3 class="text-xl font-semibold text-secondary inline">Family Recovery</h3>
-                    <p class="text-text mb-4">Supporting families through recovery and challenging the narrative that addiction only affects the individual. This campaign highlights family recovery stories and promotes family-inclusive approaches.</p>
-                    <div class="mb-4">
-                        <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
-                        <ul class="text-text text-sm space-y-1">
-                            <li>• Family recovery workshops</li>
-                            <li>• Family support network building</li>
-                            <li>• Family-inclusive policy advocacy</li>
-                            <li>• Family recovery success stories</li>
-                        </ul>
-                    </div>
-                    <a href="#family-recovery" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Recovery Is Possible -->
+      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">💙</div>
+          <h3 class="text-xl font-semibold text-secondary">Recovery Is Possible</h3>
         </div>
-    </section>
+        <p class="text-gray-700 mb-4">Our flagship campaign celebrating recovery stories and demonstrating that recovery is possible for everyone. Through personal stories, data-driven insights, and community events, we showcase the reality of recovery and inspire hope.</p>
+        <div class="mb-4">
+          <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
+          <ul class="text-gray-700 text-sm space-y-1">
+            <li>• Recovery story sharing events</li>
+            <li>• Social media awareness campaigns</li>
+            <li>• Community workshops and talks</li>
+            <li>• Recovery success metrics publication</li>
+          </ul>
+        </div>
+        <a href="#recovery-possible" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
+      </div>
+
+      <!-- Mental Health Matters -->
+      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🧠</div>
+        <h3 class="text-xl font-semibold text-secondary inline">Mental Health Matters</h3>
+        <p class="text-gray-700 mb-4">Addressing mental health stigma and promoting early intervention. This campaign focuses on workplace mental health, youth mental wellbeing, and integrated mental health support.</p>
+        <div class="mb-4">
+          <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
+          <ul class="text-gray-700 text-sm space-y-1">
+            <li>• Workplace mental health training</li>
+            <li>• Youth mental health awareness</li>
+            <li>• Anti-stigma campaigns</li>
+            <li>• Mental health first aid courses</li>
+          </ul>
+        </div>
+        <a href="#mental-health-matters" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
+      </div>
+
+      <!-- Housing First -->
+      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🏠</div>
+        <h3 class="text-xl font-semibold text-secondary inline">Housing First</h3>
+        <p class="text-gray-700 mb-4">Advocating for Housing First approaches and challenging homelessness myths. We work to ensure that stable housing is recognized as a fundamental right and essential foundation for recovery.</p>
+        <div class="mb-4">
+          <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
+          <ul class="text-gray-700 text-sm space-y-1">
+            <li>• Policy advocacy and lobbying</li>
+            <li>• Housing rights education</li>
+            <li>• Landlord awareness campaigns</li>
+            <li>• Housing stability success stories</li>
+          </ul>
+        </div>
+        <a href="#housing-first" class="bg-secondary hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
+      </div>
+
+      <!-- Family Recovery -->
+      <div class="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold mr-4 mb-6 inline-flex">🤝</div>
+        <h3 class="text-xl font-semibold text-secondary inline">Family Recovery</h3>
+        <p class="text-gray-700 mb-4">Supporting families through recovery and challenging the narrative that addiction only affects the individual. This campaign highlights family recovery stories and promotes family-inclusive approaches.</p>
+        <div class="mb-4">
+          <h4 class="font-semibold text-secondary mb-2">Key Activities:</h4>
+          <ul class="text-gray-700 text-sm space-y-1">
+            <li>• Family recovery workshops</li>
+            <li>• Family support network building</li>
+            <li>• Family-inclusive policy advocacy</li>
+            <li>• Family recovery success stories</li>
+          </ul>
+        </div>
+        <a href="#family-recovery" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Campaign Impact -->
     <section class="py-16">
@@ -196,31 +221,44 @@
     </section>
 
     <!-- Get Involved -->
-    <section class="py-16 bg-lightbg">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Get Involved</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">📢</div>
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Spread the Word</h3>
-                    <p class="text-text text-sm mb-4">Share our campaign messages on social media and with your networks.</p>
-                    <button class="bg-primary hover:bg-secondary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Share Campaign</button>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🎯</div>
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Volunteer</h3>
-                    <p class="text-text text-sm mb-4">Join our campaign volunteers to help organize events and spread awareness.</p>
-                    <a href="volunteering.html" class="bg-accent hover:bg-primary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Volunteer Now</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🤝</div>
-                    <h3 class="text-lg font-semibold mb-4 text-secondary">Partner With Us</h3>
-                    <p class="text-text text-sm mb-4">Organizations can partner with us to amplify campaign messages.</p>
-                    <a href="partners.html" class="bg-secondary hover:bg-primary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Partner</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat overflow-hidden" 
+  style="background-image: url('/assets/GetInvolvedHero.png');"
+>
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white drop-shadow-lg">Get Involved</h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Spread the Word -->
+      <div class="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">📢</div>
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Spread the Word</h3>
+        <p class="text-gray-700 text-sm mb-4">Share our campaign messages on social media and with your networks.</p>
+        <button class="bg-primary hover:bg-secondary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Share Campaign</button>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🎯</div>
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Volunteer</h3>
+        <p class="text-gray-700 text-sm mb-4">Join our campaign volunteers to help organize events and spread awareness.</p>
+        <a href="volunteering.html" class="bg-accent hover:bg-primary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Volunteer Now</a>
+      </div>
+
+      <!-- Partner With Us -->
+      <div class="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-all duration-300">
+        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">🤝</div>
+        <h3 class="text-lg font-semibold mb-4 text-secondary">Partner With Us</h3>
+        <p class="text-gray-700 text-sm mb-4">Organizations can partner with us to amplify campaign messages.</p>
+        <a href="partners.html" class="bg-secondary hover:bg-primary text-white text-sm font-semibold py-2 px-4 rounded transition-colors duration-200">Partner</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Campaign Resources -->
     <section class="py-16">
@@ -252,29 +290,40 @@
     </section>
 
     <!-- Upcoming Events -->
-    <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Upcoming Campaign Events</h2>
-            <p class="text-xl mb-8">Join us at our upcoming awareness events and community activities.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold mb-2">Recovery Stories Live</h3>
-                    <p class="text-sm mb-2">October 15, 2023 • Online Event</p>
-                    <p class="text-sm">Hear inspiring recovery journeys and join the conversation.</p>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold mb-2">Mental Health Awareness Week</h3>
-                    <p class="text-sm mb-2">October 16-22, 2023 • Various Locations</p>
-                    <p class="text-sm">Community events and workshops across the UK.</p>
-                </div>
-                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold mb-2">Policy Advocacy Summit</h3>
-                    <p class="text-sm mb-2">November 8, 2023 • London</p>
-                    <p class="text-sm">Bringing together stakeholders to drive policy change.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat overflow-hidden text-white" 
+  style="background-image: url('/assets/CTA.png');"
+>
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <h2 class="text-3xl font-bold mb-8 text-white">Upcoming Campaign Events</h2>
+    <p class="text-xl mb-8">Join us at our upcoming awareness events and community activities.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition duration-300">
+        <h3 class="text-lg font-semibold mb-2 text-white">Recovery Stories Live</h3>
+        <p class="text-sm mb-2">October 15, 2023 • Online Event</p>
+        <p class="text-sm">Hear inspiring recovery journeys and join the conversation.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition duration-300">
+        <h3 class="text-lg font-semibold mb-2 text-white">Mental Health Awareness Week</h3>
+        <p class="text-sm mb-2">October 16–22, 2023 • Various Locations</p>
+        <p class="text-sm">Community events and workshops across the UK.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition duration-300">
+        <h3 class="text-lg font-semibold mb-2 text-white">Policy Advocacy Summit</h3>
+        <p class="text-sm mb-2">November 8, 2023 • London</p>
+        <p class="text-sm">Bringing together stakeholders to drive policy change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Include footer -->
     <div w3-include-html="footer.html"></div>

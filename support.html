@@ -50,18 +50,32 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Support Services</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Comprehensive Recovery Support for Every Step of the Journey</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#services" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Services</a>
-                <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get Support</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+<section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-center bg-cover bg-no-repeat" 
+  role="banner"
+  style="background-image: url('/assets/SupportHero.png');"
+>
+  <!-- Gradient overlay for brand consistency -->
+  <div class="absolute inset-0"></div>
+
+  <!-- Main content -->
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+      Support Services
+    </h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+      Comprehensive Recovery Support for Every Step of the Journey
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#services" class="btn-primary text-lg px-8 py-4 shadow-2xl">Explore Services</a>
+      <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get Support</a>
+    </div>
+  </div>
+
+  <!-- Subtle bottom gradient fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Support Overview -->
     <section class="py-16">
@@ -145,35 +159,58 @@
     </section>
 
     <!-- How Support Works -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">How Our Support Works</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
-                        <h3 class="text-lg font-semibold mb-2 text-secondary">Assessment</h3>
-                        <p class="text-text text-sm">Comprehensive needs assessment to understand individual circumstances and support requirements.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
-                        <h3 class="text-lg font-semibold mb-2 text-secondary">Personalized Plan</h3>
-                        <p class="text-text text-sm">Development of tailored support plans that address specific needs and goals.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
-                        <h3 class="text-lg font-semibold mb-2 text-secondary">Integrated Support</h3>
-                        <p class="text-text text-sm">Coordination of multiple support services for holistic, integrated care.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
-                        <h3 class="text-lg font-semibold mb-2 text-secondary">Ongoing Care</h3>
-                        <p class="text-text text-sm">Continuous support and monitoring to ensure sustained recovery and wellbeing.</p>
-                    </div>
-                </div>
-            </div>
+<section 
+  class="py-16 relative bg-center bg-cover bg-no-repeat overflow-hidden" 
+  style="background-image: url('/assets/Support2.png');"
+>
+  <!-- Soft overlay to maintain text readability -->
+  <div class="absolute inset-0 bg-white/85"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-secondary">How Our Support Works</h2>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Step 1 -->
+        <div class="text-center bg-lightbg/70 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+          <h3 class="text-lg font-semibold mb-2 text-secondary">Assessment</h3>
+          <p class="text-text text-sm">
+            Comprehensive needs assessment to understand individual circumstances and support requirements.
+          </p>
         </div>
-    </section>
+
+        <!-- Step 2 -->
+        <div class="text-center bg-lightbg/70 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+          <h3 class="text-lg font-semibold mb-2 text-secondary">Personalized Plan</h3>
+          <p class="text-text text-sm">
+            Development of tailored support plans that address specific needs and goals.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center bg-lightbg/70 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+          <h3 class="text-lg font-semibold mb-2 text-secondary">Integrated Support</h3>
+          <p class="text-text text-sm">
+            Coordination of multiple support services for holistic, integrated care.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="text-center bg-lightbg/70 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">4</div>
+          <h3 class="text-lg font-semibold mb-2 text-secondary">Ongoing Care</h3>
+          <p class="text-text text-sm">
+            Continuous support and monitoring to ensure sustained recovery and wellbeing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Support Impact -->
     <section class="py-16 bg-lightbg">
@@ -205,26 +242,54 @@
     </section>
 
     <!-- Access Support -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-8 text-secondary">Access Support Services</h2>
-                <p class="text-lg text-text mb-8">Our support services are available through NHS referrals, self-referral, or through partner organizations. Contact us to discuss your support needs or to learn more about how we can help.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-lightbg p-6 rounded-lg">
-                        <h3 class="text-lg font-semibold mb-4 text-secondary">For Individuals</h3>
-                        <p class="text-text mb-4">Self-referral available through our online portal or by contacting our support team directly.</p>
-                        <a href="contact.html" class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Get Support</a>
-                    </div>
-                    <div class="bg-lightbg p-6 rounded-lg">
-                        <h3 class="text-lg font-semibold mb-4 text-secondary">For Organizations</h3>
-                        <p class="text-text mb-4">Partner with us to provide comprehensive support services to your service users.</p>
-                        <a href="partners.html" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Partner With Us</a>
-                    </div>
-                </div>
-            </div>
+    <section 
+  class="py-16 relative bg-center bg-cover bg-no-repeat overflow-hidden" 
+  style="background-image: url('/assets/CTA.png');"
+>
+  <!-- Soft overlay for readability -->
+  <div class="absolute inset-0 "></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-secondary text-white">Access Support Services</h2>
+      <p class="text-lg text-text mb-8 text-white">
+        Our support services are available through NHS referrals, self-referral, or through partner organizations. 
+        Contact us to discuss your support needs or to learn more about how we can help.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Individuals Card -->
+        <div class="bg-lightbg p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <h3 class="text-lg font-semibold mb-4 text-secondary">For Individuals</h3>
+          <p class="text-text mb-4">
+            Self-referral available through our online portal or by contacting our support team directly.
+          </p>
+          <a 
+            href="contact.html" 
+            class="bg-primary hover:bg-secondary text-white font-semibold py-2 px-4 rounded transition-colors duration-200 inline-block"
+          >
+            Get Support
+          </a>
         </div>
-    </section>
+
+        <!-- Organizations Card -->
+        <div class="bg-lightbg p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+          <h3 class="text-lg font-semibold mb-4 text-secondary">For Organizations</h3>
+          <p class="text-text mb-4">
+            Partner with us to provide comprehensive support services to your service users.
+          </p>
+          <a 
+            href="partners.html" 
+            class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200 inline-block"
+          >
+            Partner With Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Include footer -->
     <div w3-include-html="footer.html"></div>
