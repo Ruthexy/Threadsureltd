@@ -50,18 +50,33 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-32 relative overflow-hidden" role="banner">
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Press & Media</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">Stay Informed. Get the Story.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#media-kit" class="btn-primary text-lg px-8 py-4 shadow-2xl">Media Kit</a>
-                <a href="#contact" class="btn-accent text-lg px-8 py-4 shadow-2xl">Contact Press</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
-    </section>
+    <section 
+  class="hero-bg text-white py-32 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+  role="banner"
+  style="background-image: url('assets/PressHero.png');"
+>
+  <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+      Press & Media
+    </h1>
+    <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+      Stay Informed. Get the Story.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#media-kit" class="btn-primary text-lg px-8 py-4 shadow-2xl">
+        Media Kit
+      </a>
+      <a href="#contact" class="btn-accent text-lg px-8 py-4 shadow-2xl">
+        Contact Press
+      </a>
+    </div>
+  </div>
+
+  <!-- Gradient fade at the bottom -->
+  <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
 
     <!-- Media Kit -->
     <section class="py-16 bg-lightbg">
@@ -83,37 +98,80 @@
     </section>
 
     <!-- Recent Coverage -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Recent Coverage</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <article class="bg-lightbg p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">ThreadSure Revolutionizes Mental Health Recovery</h3>
-                    <p class="text-text mb-2 italic">Published in Health Tech Today, June 2023</p>
-                    <p class="text-text mb-4">ThreadSure's innovative platform is transforming how NHS trusts manage recovery pathways.</p>
-                    <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Read Article</a>
-                </article>
-                <article class="bg-lightbg p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">EU Expansion Brings Hope to Cross-Border Care</h3>
-                    <p class="text-text mb-2 italic">Featured in European Healthcare Journal, May 2023</p>
-                    <p class="text-text mb-4">New partnerships extend ThreadSure's reach to European healthcare providers.</p>
-                    <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Read Article</a>
-                </article>
-                <article class="bg-lightbg p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Justice System Adopts Trauma-Informed Tech</h3>
-                    <p class="text-text mb-2 italic">Covered by Justice Weekly, April 2023</p>
-                    <p class="text-text mb-4">Ministry of Justice pilots ThreadSure for probation and rehabilitation programs.</p>
-                    <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Read Article</a>
-                </article>
-                <article class="bg-lightbg p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4 text-secondary">Startup Spotlight: ThreadSure's Journey</h3>
-                    <p class="text-text mb-2 italic">TechCrunch UK, March 2023</p>
-                    <p class="text-text mb-4">From NHS collaboration to EU expansion, ThreadSure's story of innovation.</p>
-                    <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">Read Article</a>
-                </article>
-            </div>
-        </div>
-    </section>
+    <section 
+  class="py-16 relative bg-cover bg-center bg-no-repeat overflow-hidden" 
+  style="background-image: url('assets/Press2.png');"
+>
+  <!-- Gradient overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/85 to-white/90"></div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Recent Coverage</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <article class="bg-lightbg/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-4 text-secondary">
+          ThreadSure Revolutionizes Mental Health Recovery
+        </h3>
+        <p class="text-text mb-2 italic">
+          Published in Health Tech Today, June 2023
+        </p>
+        <p class="text-text mb-4">
+          ThreadSure's innovative platform is transforming how NHS trusts manage recovery pathways.
+        </p>
+        <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
+          Read Article
+        </a>
+      </article>
+
+      <article class="bg-lightbg/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-4 text-secondary">
+          EU Expansion Brings Hope to Cross-Border Care
+        </h3>
+        <p class="text-text mb-2 italic">
+          Featured in European Healthcare Journal, May 2023
+        </p>
+        <p class="text-text mb-4">
+          New partnerships extend ThreadSure's reach to European healthcare providers.
+        </p>
+        <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
+          Read Article
+        </a>
+      </article>
+
+      <article class="bg-lightbg/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-4 text-secondary">
+          Justice System Adopts Trauma-Informed Tech
+        </h3>
+        <p class="text-text mb-2 italic">
+          Covered by Justice Weekly, April 2023
+        </p>
+        <p class="text-text mb-4">
+          Ministry of Justice pilots ThreadSure for probation and rehabilitation programs.
+        </p>
+        <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
+          Read Article
+        </a>
+      </article>
+
+      <article class="bg-lightbg/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-4 text-secondary">
+          Startup Spotlight: ThreadSure's Journey
+        </h3>
+        <p class="text-text mb-2 italic">
+          TechCrunch UK, March 2023
+        </p>
+        <p class="text-text mb-4">
+          From NHS collaboration to EU expansion, ThreadSure's story of innovation.
+        </p>
+        <a href="#" class="bg-accent hover:bg-primary text-white font-semibold py-2 px-4 rounded transition-colors duration-200">
+          Read Article
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
 
     <!-- Press Contact -->
     <section class="py-16 bg-lightbg">
