@@ -50,12 +50,30 @@
     <div w3-include-html="header.html"></div>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-primary to-accent text-white py-20" role="banner">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-secondary">Who We Are</h1>
-            <p class="text-xl mb-8">A Trusted Partner in Recovery</p>
-        </div>
-    </section>
+   <section
+   class="hero-bg text-white py-32 relative overflow-hidden bg-center bg-cover bg-no-repeat"
+   role="banner"
+   style="background-image: url('/assets/ActiveCampaigns_50.png');"
+ >
+   <!-- Brand gradient overlay -->
+   <div class="absolute inset-0"></div>
+
+   <!-- Subtle bottom fade to white -->
+   <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+
+   <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+     <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+       Who We Are
+     </h1>
+     <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+       A Trusted Partner in Recovery
+     </p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center">
+       <a href="#organization" class="btn-primary text-lg px-8 py-4 shadow-2xl">Learn More</a>
+       <a href="contact.html" class="btn-accent text-lg px-8 py-4 shadow-2xl">Get in Touch</a>
+     </div>
+   </div>
+ </section>
 
     <!-- Breadcrumb -->
     <nav class="bg-lightbg py-4" aria-label="Breadcrumb">
@@ -71,9 +89,15 @@
     </nav>
 
     <!-- Organization Overview -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="organization" class="py-24 bg-center bg-cover bg-no-repeat relative overflow-hidden text-text"
+  style="background-image: url('/assets/PartnersHero.png');"
+>
+  <!-- Soft overlay for readability -->
+  <div class="absolute inset-0 bg-white/80 backdrop-blur-[2px]"></div>
+
+  <div class="container mx-auto px-4 relative z-10 slide-up">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <h2 class="text-3xl font-bold mb-6 text-secondary">Our Organization</h2>
                     <p class="text-lg text-text mb-6 leading-relaxed">ThreadSure Ltd® is a pioneering digital health company specializing in secure, trauma-informed platforms for substance misuse and mental health recovery pathways. Founded in 2020, we emerged from collaboration between NHS clinicians and technology experts who recognized the need for better digital tools in recovery care.</p>
@@ -117,10 +141,13 @@
                 </div>
             </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Structure & Governance -->
-    <section class="py-16 bg-lightbg">
+    <section class="py-24 bg-gradient-to-br from-gray-50 to-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Our Structure</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -147,7 +174,7 @@
     </section>
 
     <!-- Commitment Section -->
-    <section class="py-16">
+    <section class="py-24 bg-gradient-to-r from-primary/5 to-accent/5">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-8 text-secondary">Our Commitment</h2>
             <p class="text-lg text-text max-w-3xl mx-auto mb-8 leading-relaxed">At ThreadSure, we are committed to improving recovery outcomes through technology that respects and empowers individuals. We believe that everyone deserves access to secure, effective tools that support their journey to recovery, regardless of their background or circumstances.</p>
